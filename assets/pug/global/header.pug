@@ -1,0 +1,39 @@
+header.header.bla
+	.section_in 
+		.header_main
+			.header_logo 
+				a(href="#")
+					img(src="i/logo.png", alt="")
+			.header_menu 
+				nav.header_nav.link-hover
+						ul
+							-
+								let nav = [
+									{
+										name: 'Клуб инвесторов', 
+										link: '#'
+									},
+									{
+										name: 'Групповое инвестирование', 
+										link: '#'
+									},
+									{
+										name: 'Анонимное инвестирование', 
+										link: '#'
+									},
+									{
+										name: 'Отзывы', 
+										link: '#'
+									},
+									{
+										name: 'Контакты', 
+										link: '#'
+									},
+								]
+							each item in nav
+								li 
+									a(href=item.link class="blue")=item.name 
+			.burger_trigger.trigger(data-target="menu")
+				span
+				span
+				span

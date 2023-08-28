@@ -1,0 +1,109 @@
+.popup.popup_submit(data-id="form")
+	.popup_form_bg.close_popups.remove
+	.popup_form_w
+		.popup_close.close_popups.remove 
+			button(type="button")
+				+icon('close')
+		.popup_form_left
+			.popup_form_left_hide
+				.popup_form_head 
+					h3 Укажите своё имя и номер телефона:
+				form.popup_form
+					.popup_form_input
+						input(type="text" placeholder="Имя")
+					.popup_form_input
+						input(type="tel" placeholder="+7 (___) ___-__-__")
+					.popup_form_btn 
+						input(type="submit" value="ПОЛУЧИТЬ ОБРАТНЫЙ ЗВОНОК")
+					.popup_policy!='Отправляя форму вы принимаете с <a href="#"> Политику Конфиденциальности</a> и соглашаетесь на обработку своих персональныз данных'
+			.popup_thanks(id="thank-you-message")
+				.popup_thanks_head 
+					h3 Спасибо!
+				.popup_thanks_txt 
+					p Ваша заявка принята! Ожидайте звонка менеджера в ближайшее время.
+				.popup_thanks_img 
+					+icon('thanks')
+		.popup_form_right 
+			img(src="i/popup.png", alt="")
+		
+
+
+
+
+.popup.popup_submit(data-id="form_mail")
+	.popup_form_bg.close_popups.remove
+	.popup_form_w.popup_mail
+		.popup_close.close_popups.remove 
+			button(type="button")
+				+icon('close')
+		.popup_form_left
+			.popup_form_left_hide
+				.popup_form_head 
+					h3 Укажите свой E-mail:
+				form.popup_form
+					.popup_form_input
+						input(type="mail" placeholder="E-mail")
+					.popup_form_btn 
+						input(type="submit" value="ОТПРАВИТЬ")
+					.popup_policy_mail!='Отправляя форму вы принимаете с <a href="#"> Политику Конфиденциальности</a> и соглашаетесь на обработку своих персональныз данных'
+			.popup_thanks(id="thank-you-message")
+				.popup_thanks_head 
+					h3 Спасибо!
+				.popup_thanks_txt 
+					p Ваша заявка принята! Ожидайте звонка менеджера в ближайшее время.
+				.popup_thanks_img 
+					+icon('thanks')
+		.popup_form_right 
+			img(src="i/popup2.png", alt="")
+
+
+
+.popup.popup_submit(data-id="form_capital")
+	.popup_form_bg.close_popups.remove
+	.popup_form_w
+		.popup_close.close_popups.close_capital.remove
+			button(type="button")
+				+icon('close')
+		.popup_form_left
+			.popup_form_left_hide
+				.popup_form_head 
+					h3 Укажите своё имя и номер телефона:
+				form.popup_form
+					.popup_form_input
+						input(type="text" placeholder="Имя")
+					.popup_form_input
+						input(type="tel" placeholder="+7 (___) ___-__-__")
+					.popup_capital 
+						p Размер капитала, который планируете<br> инвестировать в недвижимость (в рублях):
+					.popup_form_textarea
+						textarea(name="200 000", placeholder="200 000") 
+					.popup_form_btn 
+						input(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ НА ВСТУПЛЕНИЕ")
+					.popup_policy_capital!='Отправляя форму вы принимаете с <a href="#"> Политику Конфиденциальности</a> и соглашаетесь на обработку своих персональныз данных'
+			.popup_thanks(id="thank-you-message")
+				.popup_thanks_head 
+					h3 Спасибо!
+				.popup_thanks_txt 
+					p Ваша заявка принята! Ожидайте звонка менеджера в ближайшее время.
+				.popup_thanks_img 
+					+icon('thanks')
+		.popup_form_right 
+			img(src="i/popup3.png", alt="")
+			
+
+
+.popup.popup_menu(data-id="menu")
+	.popup_form_bg_m.close_popups.remove 
+	.popup_form_m
+		.popup_close_m.close_popups.remove 
+			button(type="button")
+				+icon('close')
+		.popup_menu_head 
+			.popup_logo 
+				a(href="#")
+					img(src="i/logo.png", alt="")
+		.popup_menu_main
+			ul
+				each item in ['Клуб инвесторов', 'Групповое инвестирование', 'Анонимное инвестирование', 'Отзывы', 'Контакты']
+					li.remove
+						a(href="#")=item 

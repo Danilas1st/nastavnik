@@ -1,0 +1,475 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.hero 
+		.section_in 
+			.hero_main 
+				.hero_main_left
+					.hero_main_top
+						.hero_head 
+							h1 «Клуб инвесторов»
+						.hero_txt 
+							p Инвестирование в недвижимость Тюмени <br>с доходностью от <span>50% годовых</span>
+						.hero_btn 
+							button(type="button" data-target="form" class="trigger") Выйти на пассивный доход
+					.hero_main_bottom 
+						ul 
+							li.hero_age 
+								h2 11 лет
+								p в сфере <br>недвижимости
+							li.hero_deals
+								h2 500+ сделок
+								p провел как брокер
+							li.hero_second_age 
+								h2 5+ лет
+								p предприниматель,<br> инвестор
+							li.hero_money 
+								h2 200+ млн
+								p в управлении компании
+				.hero_main_right 
+					.hero_foto 
+						img(src="i/gallery/hero.png", alt="")
+					.hero_foto_info 
+						p Сергей Яковлев 
+						span Основатель «Клуба инвесторов»
+	section.club 
+		.section_in 
+			.club_main 
+				.club_main_left 
+					.club_main_left_top
+						h2 Задача клуба
+						p Развивать компетенции инвесторов и дать<br> резидентам инвест-объекты с<br> доходностью выше 50% годовых
+					.club_main_left_bottom 
+						h2 Возможности клуба
+						ul 
+							li
+								.left_img
+									img(src="i/check.png", alt="")
+								p Групповые инвестиции
+							li 
+								.left_img
+									img(src="i/check.png", alt="")
+								p Готовая финансовая стратегия<br> умножения капитала
+							li
+								.left_img 
+									img(src="i/check.png", alt="")
+								p Доходность от 50% годовых
+							li
+								.left_img 
+									img(src="i/check.png", alt="")
+								p Участие в крупных и значимых<br> проектах Тюмени, как инвестор
+				.club_main_right 
+					img(src="i/club.png", alt="")
+	section.info 
+		.section_in 
+			.info_main_top
+				.info_main_left 
+					.info_main_left_top 
+						h2 Инвестиции —
+						ul
+							li
+								p в недвижимость вторичного рынка
+							li 
+								p в новостройки
+							li 
+								p в коммерческую недвижимость
+							li 
+								p в застройщиков (девелопмент)
+					.info_main_left_bootom 
+						h2 Земля под ИЖС. <br>Многоквартирные жилые дома
+						p Покупка земли, перепродажа <br>застройщикам под строительство
+				.info_main_right 
+					.info_main_right_top 
+						h2 Арендный бизнес <br>в сфере недвижимости
+					.info_main_right_middle
+						h2 Редевелопмент и реновация
+						p Восстанавливаем или перестраиваем здания
+					.info_main_right_bottom
+						.info_main_right_bottom_btn 
+							button(type="button" data-target="form_mail" class="trigger") ПОСМОТРЕТЬ ПРЕЗЕНТАЦИЮ КЛУБА
+								img(src="i/arrow-tr.png", alt="")
+			.info_main_bottom 
+				.info_main_advantages_w
+					.info_main_advantages
+						.info_main_advantages_head 
+							h2 Все преимущества для участников клуба:
+						.info_main_advantages_information
+							.info_main_advantages_left_list 
+								ul 
+									li 
+										p Получение больших скидок за объем приобретенных объектов от застройщика
+									li 
+										p Готовая финансовая стратегия умножения капитала
+									li 
+										p Узнаете самые эффективные схемы инвестиций
+									li
+										p Сможете поучаствовать в групповых инвестициях
+									li 
+										p Получите возможность оформить ипотеку за %
+									li 
+										p Получите доступ к индивидуальному инвестированию в прибыльные проекты
+									li 
+										p Получите возможность войти в долю в интересные проекты с пассивным доходом
+							.info_main_advantages_right_list
+								ul 
+									li 
+										p Быть в правильном информационном поле
+									li 
+										p Постоянное личное развитие навыков
+									li 
+										p Развитие насмотренности
+									li
+										p Окружение единомышленников
+									li 
+										p Выход на повышенный пассивный доход
+									li 
+										p Получение самых горячих предложений
+	section.free
+		.section_in 
+			.free_main 
+				.free_main_left 
+					.free_main_head 
+						h2 С увеличением численности<br> резидентов Клуб становится дороже
+						p Клуб дает кратный рост в доходах
+						p Если вы не окупите стоимость участия в Клубе, то мы вернем деньги
+					.free_main_how 
+						.free_main_how_head
+							h2 Как вступить в «Клуб инвесторов»?
+						.free_main_how_list 
+							ul
+								li 
+									span 1.
+									p Заполнить анкету
+								li 
+									span 2.
+									p Ответить на звонок менеджера
+								li 
+									span 3.
+									p Узнать об условиях вступления и правилах участия
+				.free_main_right 
+					.free_main_right_btn 
+						p Заполнить анкету на вступление <br>в закрытый клуб миллионеров
+						button(type="button" data-target="form_capital" class="trigger") Заполнить анкету
+	section.open 
+		.section_in 
+			.open_main 
+				.open_main_left
+					.open_head 
+						h2 ОТКРЫТЫЕ ВСТРЕЧИ <br>ПО ГРУППОВЫМ ИНВЕСТИЦИЯМ
+					.open_txt 
+						p Количество мест ограничено.<br> Следите за анонсами в Телеграм-канале:
+					.open_btn 
+						a(href="#") ПОЙТИ НА ОТКРЫТУЮ ВСТРЕЧУ
+				.open_main_right 
+					img(src="i/photo2.png", alt="")
+	section.strategy
+		.section_in 
+			.strategy_main 
+				.starategy_head
+					h2 12 стратегий инвестирования клуба
+					.strategy_slider_nav 
+						.strategy_slider_btn_previos 
+							button(type="button")
+								+icon('prew')
+						.strategy_slider_btn_next 
+							button(type="button")
+								+icon('next')
+				.strategy_slider_w
+					.strategy_slider.swiperstra 
+						.swiper-wrapper
+							-for(i = 0; i < 12; i++)
+								.swiper-slide.slide_style 
+									.strategy_slide_head 
+										h6 Новостройки <br>на старте продаж
+									.stategy_slide_txt 
+										p Выбираем только те ЖК которые дадут добавленную стоимость и получаем лучшие условия от застройщиков
+									.strategy_slide_number 
+										span 1
+						.swiper-pagination
+	section.about 
+		.section_in
+			.about_main 
+				.about_left 
+					.about_img 
+						img(src="i/gallery/about.jpg", alt="")
+					.about_info_txt
+						h6 Моя миссия
+						p Увеличивать количество миллионеров в Тюмени<br> через развитие финансовой грамотности
+				.about_right 
+					.about_right_in
+						.about_head 
+							h2 Сергей Яковлев
+						.about_right-txt 
+							p Основатель «Клуба инвесторов»
+							p Эксперт по инвестициям в жилую недвижимость
+							p Сооснователь агентства «Интеллект-инвест»
+						.about_right_info 
+							.about_right_info_top 
+								.about_right_info_top_age 
+									h6 11 лет
+									p в сфере недвижимости
+								.about_right_info_top_deal
+									h6 500+ сделок
+									p провел как брокер
+							.about_right_info_bottom 
+								.about_right_info_bottom_age 
+									h6 5+ лет
+									p Ивестор,<br> предприниматель
+								.about_right_info_bottom_money 
+									h6 200+ млн руб
+									p в управлении компании
+						.about_right_info_bot 
+							h6 Со мной вы узнаете:
+							.about_right_info_bot_list 
+								ul 
+									li
+										.about_right_info_bot_list_img 
+											img(src="i/qwestion.png", alt="")
+										p Что такое инвестиции
+									li
+										.about_right_info_bot_list_img 
+											img(src="i/qwestion.png", alt="")
+										p Как начать формировать свой капитал
+									li
+										.about_right_info_bot_list_img  
+											img(src="i/qwestion.png", alt="")
+										p Какие есть стратегии инвестирования
+									li
+										.about_right_info_bot_list_img  
+											img(src="i/qwestion.png", alt="")
+										p Какие сейчас есть инвест-проекты и какие уже реализованы
+	section.invest 
+		.section_in 
+			.invest_main 
+				.invest_main_left 
+					.invest_main_left_top
+						.invest_main_left_head 
+							h2 ГРУППОВЫЕ ИНВЕСТИЦИИ <br>ДЛЯ ВАС, ЕСЛИ:
+						.invest_main_left_list 
+							ul
+								-for(i = 0; i < 5; i++)
+									li 
+										p У вас есть возможность оформления семейной ипотеки или господдержки
+					.invest_main_left_bottom 
+						.invest_main_left_bottom_head 
+							h2 ЕДИНОЛИЧНЫЕ ИНВЕСТИЦИИ <br>ДЛЯ ВАС, ЕСЛИ:
+						.invest_main_left_bottom_txt 
+							p Если ваш капитал позволяет покупать объекты полностью 100%, Клуб предлагает вам такие варианты <span>без участия других инвесторов</span>
+						.invest_main_left_bottom_btn
+							button(type="button" data-target="form_capital" class="trigger") ЗAПОЛНИТЬ АНКЕТУ НА КЛУБ
+								img(src="i/arrow-tr.png", alt="")
+				.invest_main_right 
+					.invest_main_right_head 
+						h2 КОНФИДЕНЦИАЛЬНОЕ <br>ИНВЕСТИРОВАНИЕ<br> ДЛЯ НЕПУБЛИЧНЫХ ЛЮДЕЙ
+					.invest_main_right_info 
+						h6 Для инвесторов с капиталом от 200 млн.
+						p Если вы непубличный человек или не можете оформлять недвижимость<br> на свое имя, для вас есть конфиденциальная услуга по сопровождению<br> капитала <span>абсолютно анонимно</span>
+					.invest_main_right_btn 
+						button(type="button" data-target="form" class="trigger") ПЕРСОНАЛЬНАЯ КОНСУЛЬТАЦИЯ
+							img(src="i/arrow-tr.png", alt="")
+	section.variation 
+		.section_in 
+			.variation_main 
+				.variation_left 
+					.variation_left_head 
+						h6 Получите прямо сейчас полезный гайд
+						h2 « 5 вариантов
+						h2  соинвестирования »
+				.variation_right 
+					form.variation_form
+						.form_variation_input
+							input(type="text" placeholder="Ваше имя")
+						.form_variation_input
+							input(type="mail" placeholder="E-mail")
+						.form_variation_btn 
+							input(type="submit" value="ПОЛУЧИТЬ ГАЙД")
+						.form_policy!='Отправляя форму вы принимаете <a href="#"> Политику Конфиденциальности </a> и соглашаетесь на обработку своих персональных данных.'
+	section.transactions
+		.section_in 
+			.transactions_main
+				.transaction_main_tab 
+					ul.tab_list--link 
+						each item, i in ['Текущие сделки', 'Реализованные сделки ']
+							if i === 0
+								li(data-tab=`tab-${i}` class="active_tab")=item
+							else 
+								li(data-tab=`tab-${i}` )=item
+					.tab_info.tabcontent(data-tab="tab-0" class="active_tab")
+						.transaction_slider_nav 
+							.transaction_slider_btn_previos 
+								button(type="button")
+									+icon('prew2')
+							.transaction_slider_btn_next 
+								button(type="button")
+									+icon('next2')
+						.transaction_slider_w
+							.transaction_slider.swiper 
+								.swiper-wrapper
+									-for(i = 0; i < 10; i++)
+										.swiper-slide.custom_slide
+											.transaction_slide_info
+												.transaction_slide_left 
+													.transaction_slide_left_img 
+														img(src="i/slideimg.png", alt="")
+												.transaction_slide_right
+													.transaction_slide_right_head 
+														h6 Заголовок
+													.transaction_slide_right_info 
+														ul 
+															li 
+																p Срок реализации:
+																span 000000000
+															li 
+																p Стоимость:
+																span 000000000
+															li 
+																p Сумма инвестиций:
+																span 000000000
+															li 
+																p Привлечение ипотечных средств:
+																span да/нет
+															li 
+																p Рентабельность проектов:
+																span 000000000
+															li 
+																p ROI % годовых:
+																span 000000000
+					.tab_info.tabcontent(data-tab="tab-1")
+						.transaction_slider_nav 
+							.transaction_slider_btn_previos 
+								button(type="button")
+									+icon('prew2')
+							.transaction_slider_btn_next 
+								button(type="button")
+									+icon('next2')
+						.transaction_slider_w
+							.transaction_slider.swiper 
+								.swiper-wrapper
+									-for(i = 0; i < 8; i++)
+										.swiper-slide
+											.transaction_slide_info
+												.transaction_slide_left 
+													.transaction_slide_left_img 
+														img(src="i/slideimg.png", alt="")
+												.transaction_slide_right
+													.transaction_slide_right_head 
+														h6 Заголовок 2
+													.transaction_slide_right_info 
+														ul 
+															li 
+																p Срок реализации:
+																span 11111111111
+															li 
+																p Стоимость:
+																span 11111111111
+															li 
+																p Сумма инвестиций:
+																span 11111111111
+															li 
+																p Привлечение ипотечных средств:
+																span да/нет
+															li 
+																p Рентабельность проектов:
+																span 11111111111
+															li 
+																p ROI % годовых:
+																span 11111111111
+	section.offer
+		.section_in 
+			.offer_main
+				.offer_btn 
+					button(type="button" data-target="form" class="trigger") Предложить клубу свой проект
+				.offer_txt 
+					p Lorem ipsum dolor sit amet consectetur
+	section.reviews 
+		.section_in 
+			.reviews_main 
+				.reviews_head 
+					h2 ОТЗЫВЫ НАШИХ ИНВЕСТОРОВ
+					.reviews_slider_link
+						a(href="#")  Смотреть еще отзывы
+							+icon('next')
+				.reviews_slider_w
+					.reviews_slider.swiper_rev
+						.swiper-wrapper.wrapper-custom
+							-for(i = 0; i < 10; i++)
+								.swiper-slide.swiper_reviews 
+									.reviews_slide.showMoreBlock
+										.reviews_top 
+											.reviews_img 
+												img(src="i/photo.png", alt="")
+											.reviews_slide_head
+												h3 Имя Фамилия
+												p 20.20.2020
+										.reviews_slide_txt.showMoreTxt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										.reviews_btn_more.showMoreBtn
+											p Показать больше
+						.swiper_pagination
+	section.personal 
+		.section_in 
+			.personal_main 
+				.personal_head 
+					h2 Проведем для вас<br> персональную консультацию
+				.personal_txt 
+					p Реализация индивидуальных проектов по Редевелопменту.<br> Покупка земли под строительство многоквартирных домов. <br>Инвестиции в девелоперов до получения проектного финансирования
+				.personal_btn 
+					button(type="button" data-target="form" class="trigger") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+	section.gallery
+		.gallery_main 
+			.gallery_main_w 
+				.gallery_main_w_left
+					img(src="i/gallery/gallery1.png", alt="")
+				.gallery_main_w_right
+					ul 
+						-for(i = 0; i < 4; i++)
+							li
+								img(src="i/gallery/gallery1.png", alt="")
+	section.contacts 
+		.section_in 
+			.contacts_main 
+				.contacts_main_top
+					.contacts_main_top_head
+						h2 Контакты
+					.contacts_list 
+						ul 
+							li 
+								.contacts_addres 
+									h6 Адрес:
+									p Герцена, 53, офис 420.
+							li
+								.contacts_social
+									.contacts_social
+										h6 Социальные сети:
+									.contacts_social_list
+										.contacts_social_w 
+											a(href="#")
+												.contact_social_img
+													img(src="i/tg.png", alt="")
+										.contacts_social_w 
+											a(href="#")
+												.contact_social_img 
+													img(src="i/vk.png", alt="")
+										.contacts_social_w 
+											a(href="#")
+												.contact_social_img 
+													img(src="i/wh.png", alt="")
+							li 
+								.contacts_mail 
+									h6 Подписаться на почтовую рассылку:
+									a(href="#")  Подписаться
+										img(src="i/arrow-tr.png", alt="")
+							li
+								.contacts_policy 
+									h6 Договор публичной оферты:
+									a(href="#") Посмотреть 
+										img(src="i/arrow-tr.png", alt="")
+	section.map 
+		.map_main
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A644196b93ba986b4ea6503943c4fdd96115cbf92a1b8ef9035125ac624dc7687&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>
+
+
+
